@@ -1,0 +1,9 @@
+package geofrey.project.Mediflow_B.repository;
+
+import geofrey.project.Mediflow_B.entity.Message;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MessageRepository extends JpaRepository<Message, Long> {
+}
