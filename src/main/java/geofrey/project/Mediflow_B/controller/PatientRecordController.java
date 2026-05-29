@@ -55,6 +55,7 @@ public class PatientRecordController {
     @PostMapping
     @PreAuthorize("hasRole('DOCTOR')")
     public PatientRecord createRecord(@RequestBody PatientRecord record) {
+        record.setId(null);
         return patientRecordRepository.save(record);
     }
 

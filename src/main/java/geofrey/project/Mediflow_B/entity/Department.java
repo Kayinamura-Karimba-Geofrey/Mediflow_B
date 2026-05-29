@@ -34,6 +34,7 @@ public class Department {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public List<Doctor> getDoctors() { return doctors; }
     public void setDoctors(List<Doctor> doctors) { this.doctors = doctors; }
 }

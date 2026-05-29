@@ -95,6 +95,7 @@ public class AppointmentController {
             appointment.setStatus("CONFIRMED");
         }
         
+        appointment.setId(null);
         return appointmentRepository.save(appointment);
     }
 

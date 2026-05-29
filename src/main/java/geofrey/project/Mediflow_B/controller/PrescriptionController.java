@@ -55,6 +55,7 @@ public class PrescriptionController {
     @PostMapping
     @PreAuthorize("hasRole('DOCTOR')")
     public Prescription createPrescription(@RequestBody Prescription prescription) {
+        prescription.setId(null);
         return prescriptionRepository.save(prescription);
     }
 

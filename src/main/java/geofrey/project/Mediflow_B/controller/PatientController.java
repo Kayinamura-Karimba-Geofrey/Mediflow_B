@@ -46,6 +46,7 @@ public class PatientController {
             user.setId(userDetails.getId());
             patient.setUser(user);
         }
+        patient.setId(null);
         return patientRepository.save(patient);
     }
 
