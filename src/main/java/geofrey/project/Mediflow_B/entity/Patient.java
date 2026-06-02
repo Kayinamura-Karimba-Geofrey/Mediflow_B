@@ -77,9 +77,11 @@ public class Patient {
     public Nurse getNurse() { return nurse; }
     public void setNurse(Nurse nurse) { this.nurse = nurse; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public User getUser() { return user; }
     public void setUser(User user) { this.user = user; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public List<Appointment> getAppointments() { return appointments; }
     public void setAppointments(List<Appointment> appointments) { this.appointments = appointments; }
 }

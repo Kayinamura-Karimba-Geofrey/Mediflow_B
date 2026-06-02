@@ -42,6 +42,7 @@ public class Nurse {
     public String getQualification() { return qualification; }
     public void setQualification(String qualification) { this.qualification = qualification; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public List<Patient> getPatients() { return patients; }
     public void setPatients(List<Patient> patients) { this.patients = patients; }
 }

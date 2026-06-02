@@ -62,9 +62,11 @@ public class Doctor {
     public Department getDepartment() { return department; }
     public void setDepartment(Department department) { this.department = department; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public List<Patient> getPatients() { return patients; }
     public void setPatients(List<Patient> patients) { this.patients = patients; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public List<Appointment> getAppointments() { return appointments; }
     public void setAppointments(List<Appointment> appointments) { this.appointments = appointments; }
 }
